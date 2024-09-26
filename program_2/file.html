@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Color(){
+            document.getElementById('text').style.color=document.getElementById('getcolor1').value;
+        }
+        function BgColor(){
+            document.getElementById('text').style.backgroundColor=document.getElementById('getcolor2').value;
+        }
+        function Font(){
+
+            opt = document.getElementById('sel_font').value; 
+
+            if(opt == "f1"){
+                document.getElementById('text').style.fontSize="12px";
+
+            }
+            else   if(opt == "f2"){
+                document.getElementById('text').style.fontSize="24px";
+
+            }
+            else   if(opt == "f3"){
+                document.getElementById('text').style.fontSize="34px";
+
+            }
+            else   if(opt == "f4"){
+                document.getElementById('text').style.fontSize="45px";
+
+            }
+            else{
+                document.getElementById('text').style.fontSize="50px";
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td>
+                <input type="button" value="B" onclick="document.getElementById('text').style.fontWeight='bold'">
+                <input type="button" value="I" onclick="document.getElementById('text').style.fontStyle='italic'">
+                <input type="button" value="U" onclick="document.getElementById('text').style.textDecoration='underline'">
+                <input type="color" id="getcolor1">
+                <input type="button" value="Apply Color" onclick="Color()">
+                <input type="color" id="getcolor2">
+                <input type="button" value="Apply Color" onclick="BgColor()">
+               
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <textarea cols="30" rows="10" id="text" style="width: 350px;height: 200px;" placeholder="Text Here ........"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+               
+                <select id="sel_font">
+                    <option value="f1">12</option>
+                    <option value="f2">24</option>
+                    <option value="f3">34</option>
+                    <option value="f4">45</option>
+                    <option value="f5">50</option>
+                </select>
+                <input type="button" value="Apply Font" onclick="Font()">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

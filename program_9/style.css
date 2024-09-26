@@ -1,0 +1,51 @@
+table{
+    border-collapse: collapse;
+}
+table tr td{
+    width: 100px;
+    height: 100px;
+    /* color: red; */
+    /* background-color: orange; */
+    border: 5px solid black;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+#t1{
+    border-left: 0px;
+    border-top: 0px;
+}
+#t2{
+   
+    border-top: 0px;
+}
+#t3{
+    border-right: 0px;
+    border-top: 0px;
+}
+#t4{
+    border-left: 0px;
+    
+}
+#t6{
+    border-right: 0px;
+    
+}
+#t7{
+    border-left: 0px;
+    border-bottom: 0px;
+}
+#t8{
+    
+    border-bottom: 0px;
+}
+#t9{
+    border-right: 0px;
+    border-bottom: 0px;
+}
+#text{
+    color: red;
+}

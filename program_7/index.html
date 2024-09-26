@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inp{
+            width: 50px;
+        }
+        table{
+            border-bottom: 3px solid black;
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <table align="center" border="0">
+        <tr>
+            <td><input type="text" style="text-align: right;" id="text"></td>
+            <td><input type="button" value="C" style="width: 35px;" onclick="document.getElementById('text').value=''"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="1" class="inp" onclick="document.getElementById('text').value += '1' ">
+                <input type="button" value="2" class="inp"  onclick="document.getElementById('text').value += '2' ">
+                <input type="button" value="3" class="inp"  onclick="document.getElementById('text').value += '3' ">
+                <input type="button" value="+" class="inp"  onclick="document.getElementById('text').value += '+' ">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="4" class="inp"  onclick="document.getElementById('text').value += '4' ">
+                <input type="button" value="5" class="inp"  onclick="document.getElementById('text').value += '5' ">
+                <input type="button" value="6" class="inp"  onclick="document.getElementById('text').value += '6' ">
+                <input type="button" value="-" class="inp"  onclick="document.getElementById('text').value = '-' ">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="7" class="inp"  onclick="document.getElementById('text').value += '7' ">
+                <input type="button" value="8" class="inp"  onclick="document.getElementById('text').value += '8' ">
+                <input type="button" value="9" class="inp"  onclick="document.getElementById('text').value += '9' ">
+                <input type="button" value="/" class="inp"  onclick="document.getElementById('text').value += '/' ">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input type="button" value="x" class="inp"  onclick="document.getElementById('text').value += '*' ">
+                <input type="button" value="0" class="inp"  onclick="document.getElementById('text').value += '0' ">
+                <input type="button" value="." class="inp"  onclick="document.getElementById('text').value += '.' ">
+                <input type="button" value="=" class="inp"  onclick="document.getElementById('text').value =eval(document.getElementById('text').value)">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

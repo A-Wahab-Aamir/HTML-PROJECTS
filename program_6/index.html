@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td><input type="number" placeholder="Enter the Marks of English" id="n1" >
+            </td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Enter the Marks of Maths" id="n2"></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Enter the Marks of Urdu" id="n3"></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Enter the Marks of Science" id="n4"></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Enter the Marks of Physics" id="n5"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Calculate Percentage" onclick="Percentage()"></td>
+        </tr>
+        <tr>
+            <td>
+                <table cellpadding="10" border="1">
+                    <tr>
+                        <td>Obtained Marks</td>
+                        <td><p id="ob_marks">your marks here...</p></td>
+                    </tr>
+                    <tr>
+                        <td>Percenatge</td>
+                        <td><p id="percentage">your percentage here...</p></td>
+                    </tr>
+                    <tr>
+                        <td>Grade </td>
+                        <td><p id="grade">your grade here...</p></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function Percentage(){
+            var sub1 = Number(document.getElementById('n1').value);
+            var sub2 = Number(document.getElementById('n2').value);
+            var sub3 = Number(document.getElementById('n3').value);
+            var sub4 = Number(document.getElementById('n4').value);
+            var sub5 = Number(document.getElementById('n5').value);
+            var total= 500; 
+            // obtained marks
+            var ob=sub1 +  sub2 + sub3 + sub4 + sub5; 
+            document.getElementById('ob_marks').innerHTML=ob;
+            // percentage
+            var per = (ob/total )*100;
+            document.getElementById('percentage').innerHTML=per.toFixed(2);
+        
+
+            // grade
+
+            if(per >= 89 &&  per <=100){
+                document.getElementById('grade').innerHTML="A One"
+            }
+            else if(per >= 79 &&  per <=89){
+                document.getElementById('grade').innerHTML="A +"
+            }
+            else if(per >= 69 &&  per <=79){
+                document.getElementById('grade').innerHTML="A "
+            }
+            else if(per >= 59 &&  per <=69){
+                document.getElementById('grade').innerHTML="B"
+            }
+            else if(per >= 49 &&  per <=59){
+                document.getElementById('grade').innerHTML="C"
+            }
+            else if(per >= 33 &&  per <=49){
+                document.getElementById('grade').innerHTML="D"
+            }
+            else{
+                document.getElementById('grade').innerHTML="Fail!"
+            }
+
+
+            
+
+
+
+
+        }
+
+    </script>
+</body>
+</html>

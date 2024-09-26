@@ -1,0 +1,25 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: lightblue;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    background-color: green;
+    /* overflow: hidden; */
+}
+ul li{
+    float: left;
+}
+ul li a{
+    color: red;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+ul li a:hover{
+    background-color: black;
+    color: wheat;
+}

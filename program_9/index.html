@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table align="center">
+        <tr>
+            <td id="t1" onclick="f1()"></td>
+            <td id="t2" onclick="f2()"></td>
+            <td id="t3" onclick="f3()"></td>
+        </tr>
+        <tr>
+            <td id="t4" onclick="f4()"></td>
+            <td id="t5" onclick="f5()"></td>
+            <td id="t6" onclick="f6()"></td>
+        </tr>
+        <tr>
+            <td id="t7" onclick="f7()"></td>
+            <td id="t8" onclick="f8()"></td>
+            <td id="t9" onclick="f9()"></td>
+        </tr>
+    </table>
+    <center>
+        <p>Player <span id="text">1</span></p>
+        <input type="button" value="Reset Game" onclick="Reset()">
+    </center>
+
+
+    <script>
+        function Reset() {
+            window.location.reload();
+            document.getElementById('text').innerHTML = "1";
+
+        }
+        function Win() {
+            var box1 = document.getElementById('t1').innerHTML;
+            var box2 = document.getElementById('t2').innerHTML;
+            var box3 = document.getElementById('t3').innerHTML;
+            var box4 = document.getElementById('t4').innerHTML;
+            var box5 = document.getElementById('t5').innerHTML;
+            var box6 = document.getElementById('t6').innerHTML;
+            var box7 = document.getElementById('t7').innerHTML;
+            var box8 = document.getElementById('t8').innerHTML;
+            var box9 = document.getElementById('t9').innerHTML;
+
+            // for first three H box
+            if (box1 == "X" && box2 == "X" && box3 == "X") {
+                document.getElementById('t1').style.textDecoration = 'line-through';
+                document.getElementById('t2').style.textDecoration = 'line-through';
+                document.getElementById('t3').style.textDecoration = 'line-through';
+                
+                document.getElementById('text').innerHTML = "1 Won";
+
+                document.getElementById('t4').onclick = null;
+                document.getElementById('t5').onclick = null;
+                document.getElementById('t6').onclick = null;
+                document.getElementById('t7').onclick = null;
+                document.getElementById('t8').onclick = null;
+                document.getElementById('t9').onclick = null;
+
+            }
+            else if (box1 == "O" && box2 == "O" && box3 == "O") {
+                document.getElementById('t1').style.textDecoration = 'line-through';
+                document.getElementById('t2').style.textDecoration = 'line-through';
+                document.getElementById('t3').style.textDecoration = 'line-through';
+                
+                
+                
+                document.getElementById('text').innerHTML = "2 Won";
+
+                document.getElementById('t4').onclick = null;
+                document.getElementById('t5').onclick = null;
+                document.getElementById('t6').onclick = null;
+                document.getElementById('t7').onclick = null;
+                document.getElementById('t8').onclick = null;
+                document.getElementById('t9').onclick = null;
+            }
+        }
+
+
+
+        function f1() {
+            var td = document.getElementById('t1');
+            var player = document.getElementById('text');
+
+            if (td.innerHTML == "") {
+                if (player.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    td.style.color = 'green';
+                    player.innerHTML = "2";
+                }
+                else {
+                    td.innerHTML = "O";
+                    td.style.color = 'red';
+                    player.style.color = 'red';
+                    player.innerHTML = "1";
+                }
+            }
+            Win();
+        }
+        function f2() {
+            var td = document.getElementById('t2');
+            var player = document.getElementById('text');
+
+            if (td.innerHTML == "") {
+                if (player.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    td.style.color = 'green';
+                    player.innerHTML = "2";
+                }
+                else {
+                    td.innerHTML = "O";
+                    td.style.color = 'red';
+                    player.innerHTML = "1";
+                }
+            }
+            Win();
+        }
+        function f3() {
+            var td = document.getElementById('t3');
+            var player = document.getElementById('text');
+
+            if (td.innerHTML == "") {
+                if (player.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    td.style.color = 'green';
+                    player.innerHTML = "2";
+                }
+                else {
+                    td.innerHTML = "O";
+                    td.style.color = 'red';
+                    player.innerHTML = "1";
+                }
+            }
+            Win();
+        }
+        function f4() {
+            var td = document.getElementById('t4');
+            var player = document.getElementById('text');
+
+            if (td.innerHTML == "") {
+                if (player.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    td.style.color = 'green';
+                    player.innerHTML = "2";
+                }
+                else {
+                    td.innerHTML = "O";
+                    td.style.color = 'red';
+                    player.innerHTML = "1";
+                }
+            }
+        }
+        function f5() {
+            var td = document.getElementById('t5');
+            var player = document.getElementById('text');
+
+            if (td.innerHTML == "") {
+                if (player.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    td.style.color = 'green';
+                    player.innerHTML = "2";
+                }
+                else {
+                    td.innerHTML = "O";
+                    td.style.color = 'red';
+                    player.innerHTML = "1";
+                }
+            }
+        }
+        function f6() {
+            var td = document.getElementById('t6');
+            var player = document.getElementById('text');
+
+            if (td.innerHTML == "") {
+                if (player.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    td.style.color = 'green';
+                    player.innerHTML = "2";
+                }
+                else {
+                    td.innerHTML = "O";
+                    td.style.color = 'red';
+                    player.innerHTML = "1";
+                }
+            }
+        }
+        function f7() {
+            var td = document.getElementById('t7');
+            var player = document.getElementById('text');
+
+            if (td.innerHTML == "") {
+                if (player.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    td.style.color = 'green';
+                    player.innerHTML = "2";
+                }
+                else {
+                    td.innerHTML = "O";
+                    td.style.color = 'red';
+                    player.innerHTML = "1";
+                }
+            }
+        }
+        function f8() {
+            var td = document.getElementById('t8');
+            var player = document.getElementById('text');
+
+            if (td.innerHTML == "") {
+                if (player.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    td.style.color = 'green';
+                    player.innerHTML = "2";
+                }
+                else {
+                    td.innerHTML = "O";
+                    td.style.color = 'red';
+                    player.innerHTML = "1";
+                }
+            }
+        }
+        function f9() {
+            var td = document.getElementById('t9');
+            var player = document.getElementById('text');
+
+            if (td.innerHTML == "") {
+                if (player.innerHTML == "1") {
+                    td.innerHTML = "X";
+                    td.style.color = 'green';
+                    player.innerHTML = "2";
+                }
+                else {
+                    td.innerHTML = "O";
+                    td.style.color = 'red';
+                    player.innerHTML = "1";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

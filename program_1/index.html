@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- js can change html content -->
+     <p id="demo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, cupiditate.
+     </p>
+     <input type="button" value="Click me" onclick="document.getElementById('demo').innerHTML='NEW RANDOM TEXT 😁😁😁😁'">
+
+     <br><br><br><hr>
+    <!-- js can change html src -->
+     <center>
+        <img src="OFF.jpg" alt="" width="150" id="off"> <br>
+        <input type="button" value="Turn On" onclick="document.getElementById('off').src='ON.jpg'">
+        <input type="button" value="Turn OFF" onclick="document.getElementById('off').src='OFF.jpg'">
+     </center>
+
+
+
+     <!-- JS CAN CHANGE HTML CSS -->
+      <center>
+        <p id="head">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium eos quae sed veniam excepturi neque suscipit repellat natus in!</p>
+    <input type="button" value="Font_size" onclick="document.getElementById('head').style.fontSize='40px'">  
+    <input type="button" value="Color" onclick="document.getElementById('head').style.color='white'">  
+    <input type="button" value="BgColor" onclick="document.getElementById('head').style.backgroundColor='black'">  
+    </center>
+    </body>
+</html>

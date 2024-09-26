@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    /* horizontally center */
+    justify-content: center;  
+    /* vertially center */
+    align-items: center;
+    height: 100vh;
+}
+
+.counter{
+    text-align: center;
+   
+}

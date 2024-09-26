@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <p id="para">
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi similique adipisci qui suscipit facilis, quasi sed sunt, totam enim, voluptate optio aliquid facere nisi sapiente laborum esse. Ipsam aperiam perspiciatis aut ex accusamus, rerum dicta natus dolorem suscipit vero necessitatibus velit, obcaecati porro. Voluptatum numquam natus magni debitis placeat? Incidunt, quidem. Praesentium cupiditate obcaecati debitis quia ea totam, expedita quas sit. Assumenda provident mollitia beatae repudiandae dolore? Ab, nesciunt atque facere dignissimos voluptatem nihil quasi nisi voluptatibus consequatur facilis necessitatibus ea quod deleniti nostrum consequuntur quae earum cumque! Deserunt fugit aperiam, ratione dolores rem voluptate esse quisquam illum quam id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, harum!
+    </p>
+    <input type="button" value="Click me" id="butt">
+
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+           
+            $('#butt').click(function(){
+               var text=  $('#para').html();
+               alert(text);           
+             })
+
+        })
+    </script>
+
+
+  
+</body>
+</html>
