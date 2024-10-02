@@ -15,20 +15,70 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+
+
+
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.green.min.css">
+
   </head>
   <body>
     <div class="container-fluid p-5 bg-dark text-center text-white">
       <h1 class="display-1 fw-bolder">SKIN CARE PRODUCTS</h1>
     </div>
 
+
+<hr>
+<div class="owl-carousel owl-theme">
+  <div class="item"><img src="img/product1.jpg" alt=""></div>
+  <div class="item"><img src="img/product2.jpg" alt=""></div>
+  <div class="item"><img src="img/product3.jpg" alt=""></div>
+  <div class="item"><img src="img/product4.jpg" alt=""></div>
+  <div class="item"><img src="img/product1.jpg" alt=""></div>
+  <div class="item"><img src="img/product1.jpg" alt=""></div>
+  <div class="item"><img src="img/product1.jpg" alt=""></div>
+  <div class="item"><img src="img/product1.jpg" alt=""></div>
+
+</div>
+
+    <hr>
+
+
+
+
+
+   
+
     <div class="container" >
         <div class="row" id="card_body">
 
         </div>
     </div>
-
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
     <script src="data.js"></script>
+
+  
     <script>
+// coursel owl plugin
+
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+   items:4,
+   margin:50,
+   loop:true, 
+   nav:true,
+   autoplay:true,
+   autoplayTimeout:1000,
+   autoplayHoverPause:true
+})
+})
+
+
+
+
+// cards print
       for (var i = 0; i < skincareProducts.length; i++) {
         document.getElementById("card_body").innerHTML += `
             
