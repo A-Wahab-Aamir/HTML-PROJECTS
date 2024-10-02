@@ -13,7 +13,7 @@ var employees = [
         "phone": "03119273846", 
         "gender": "Male", 
         "dob": "18/5/1999",
-        "profile_pic": "img/1.jpg"
+        "profile_pic": "img/2.jpg"
     },
     {
         "name": "neha azam",
@@ -21,7 +21,7 @@ var employees = [
         "phone": "03119273847", 
         "gender": "Female", 
         "dob": "19/8/1978",
-        "profile_pic": "img/1.jpg"
+        "profile_pic": "img/3.jpg"
     },
     {
         "name": "sara khan",
@@ -29,7 +29,7 @@ var employees = [
         "phone": "03119273848", 
         "gender": "Female", 
         "dob": "10/12/2000",
-        "profile_pic": "img/2.jpg"
+        "profile_pic": "img/4.jpg"
     },
     {
         "name": "ahmed zafar",
@@ -37,7 +37,7 @@ var employees = [
         "phone": "03119273849", 
         "gender": "Male", 
         "dob": "22/3/2001",
-        "profile_pic": "img/3.jpg"
+        "profile_pic": "img/5.jpg"
     },
     {
         "name": "isha patel",
@@ -45,7 +45,7 @@ var employees = [
         "phone": "03119273850", 
         "gender": "Female", 
         "dob": "15/7/1998",
-        "profile_pic": "img/4.jpg"
+        "profile_pic": "img/6.jpg"
     },
     {
         "name": "farhan zaidi",
