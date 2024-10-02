@@ -6,7 +6,8 @@ var skincareProducts = [
         "category": "Serum",
         "ingredients": "Hyaluronic Acid, Vitamin C, Aloe Vera",
         "size": "30ml",
-        "image_url": "img/product1.jpg"
+        "image_url": "img/product1.jpg",
+        "url":"p1.html"
     },
     {
         "name": "Gentle Foaming Cleanser",
@@ -15,7 +16,8 @@ var skincareProducts = [
         "category": "Cleanser",
         "ingredients": "Green Tea, Chamomile, Jojoba Oil",
         "size": "150ml",
-        "image_url": "img/product2.jpg"
+        "image_url": "img/product2.jpg",
+        "url":"p2.html"
     },
     {
         "name": "Nourishing Night Cream",
@@ -24,7 +26,8 @@ var skincareProducts = [
         "category": "Moisturizer",
         "ingredients": "Shea Butter, Coconut Oil, Retinol",
         "size": "50ml",
-        "image_url": "img/product3.jpg"
+        "image_url": "img/product3.jpg",
+        "url":"p3.html"
     },
     {
         "name": "Revitalizing Eye Cream",

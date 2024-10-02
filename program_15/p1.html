@@ -21,32 +21,38 @@
       <h1 class="display-1 fw-bolder">SKIN CARE PRODUCTS</h1>
     </div>
 
-    <div class="container" >
-        <div class="row" id="card_body">
+   <div class="container mt-3">
+    <table id="table_body" class="table" border="1">
+       
+    </table>
+   </div>
 
-        </div>
-    </div>
+
+
 
     <script src="data.js"></script>
     <script>
-      for (var i = 0; i < skincareProducts.length; i++) {
-        document.getElementById("card_body").innerHTML += `
-            
-            
-            <div class="card m-3" style="width: 18rem;">
-            <img src="${skincareProducts[i].image_url}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">${skincareProducts[i].name}</h5>
+      for (var i = 0; i < 1; i++) {
+    
+
+document.getElementById("table_body").innerHTML += `
+
+            <tr>
+            <td>
+                <img src="${skincareProducts[i].image_url}" alt="" class="img-fluid">
+            </td>
+            <td>
+                <h1 class="card-title" class='display-3'>${skincareProducts[i].name}</h1>
                 <p class="card-text"><span class='fw-bold'>Brand:  </span> ${skincareProducts[i].brand}</p>
                 <p class="card-text"><span class='fw-bold'>Price:  </span> ${skincareProducts[i].price}</p>
                 <p class="card-text"><span class='fw-bold'>Category: </span>  ${skincareProducts[i].category}</p>
                 <p class="card-text"><span class='fw-bold'>Ingrediants: </span>  ${skincareProducts[i].ingredients}</p>
-                    
-                     <a href="${skincareProducts[i].url}" class="btn btn-info btn-sm" style='width:200px'>View Deatail</a>
-            </div>
-            </div>
-            
-            `;
+                 <a href="${skincareProducts[i].url}" class="btn btn-info btn-sm" style='width:200px'>Buy Now</a>
+                
+            </td>
+        </tr>
+
+        `
       }
     </script>
   </body>
