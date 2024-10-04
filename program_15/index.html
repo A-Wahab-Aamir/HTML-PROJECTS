@@ -21,7 +21,16 @@
 
     <link rel="stylesheet" href="owl.carousel.min.css">
     <link rel="stylesheet" href="owl.theme.green.min.css">
-
+<style>
+  #scrollUp {
+  bottom: 20px;
+  right: 20px;
+  background-image: url('top.png');
+  width: 38px;
+  height: 38px;
+ 
+}
+</style>
   </head>
   <body>
     <div class="container-fluid p-5 bg-dark text-center text-white">
@@ -30,15 +39,24 @@
 
 
 <hr>
+<h2 class="text-center text-danger p-3">Visit Our Exciting Deals</h2>
 <div class="owl-carousel owl-theme">
-  <div class="item"><img src="img/product1.jpg" alt=""></div>
+  <div class="item"><a href="p1.html"><img src="img/product1.jpg" alt=""></a></div>
   <div class="item"><img src="img/product2.jpg" alt=""></div>
   <div class="item"><img src="img/product3.jpg" alt=""></div>
   <div class="item"><img src="img/product4.jpg" alt=""></div>
-  <div class="item"><img src="img/product1.jpg" alt=""></div>
-  <div class="item"><img src="img/product1.jpg" alt=""></div>
-  <div class="item"><img src="img/product1.jpg" alt=""></div>
-  <div class="item"><img src="img/product1.jpg" alt=""></div>
+  <div class="item"><img src="img/product5.jpg" alt=""></div>
+  <div class="item"><img src="img/product6.jpg" alt=""></div>
+  <div class="item"><img src="img/product7.jpg" alt=""></div>
+  <div class="item"><img src="img/product8.jpg" alt=""></div>
+  <div class="item"><img src="img/product9.jpg" alt=""></div>
+  <div class="item"><img src="img/product10.jpg" alt=""></div>
+  <div class="item"><img src="img/product11.jpg" alt=""></div>
+  <div class="item"><img src="img/product12.jpg" alt=""></div>
+  <div class="item"><img src="img/product13.jpg" alt=""></div>
+  <div class="item"><img src="img/product15.jpg" alt=""></div>
+  <div class="item"><img src="img/product14.jpg" alt=""></div>
+  <div class="item"><img src="img/product17.jpg" alt=""></div>
 
 </div>
 
@@ -50,18 +68,20 @@
 
    
 
-    <div class="container" >
+    <div class=" text-center container" >
+      <h2 class="text-center text-danger p-3">Get a Chance to Vist and Buy Products </h2>
         <div class="row" id="card_body">
 
         </div>
     </div>
     <script src="jquery-3.7.1.min.js"></script>
     <script src="owl.carousel.min.js"></script>
+    <script src="jquery.scrollUp.min.js"></script>
     <script src="data.js"></script>
 
   
     <script>
-// coursel owl plugin
+// coursel owl plugin work
 
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
@@ -74,6 +94,17 @@ $(document).ready(function(){
    autoplayHoverPause:true
 })
 })
+
+
+
+// scroolup plugin work
+
+$(function(){
+  $.scrollUp({
+    scrollImg: true,
+     topDistance: '1000'
+  });
+});
 
 
 
