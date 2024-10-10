@@ -1,7 +1,12 @@
 # FrameWorks
 https://getbootstrap.com/
 # Libraries
+## JQuery
 https://jquery.com/download/
+## Tailwind CSS
+https://tailwindcss.com/docs/installation
+## Tail Blogs
+https://tailblocks.cc/
 # Links
 https://mdbootstrap.com/docs/standard/extended/product-cards/
 
