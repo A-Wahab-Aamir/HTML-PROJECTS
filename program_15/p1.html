@@ -21,11 +21,27 @@
       <h1 class="display-1 fw-bolder">SKIN CARE PRODUCTS</h1>
     </div>
 
-   <div class="container mt-3">
-    <table id="table_body" class="table" border="1">
-       
-    </table>
-   </div>
+    <div class="container marketing" id="table_body">
+
+    
+  
+  
+      <!-- START THE FEATURETTES -->
+  
+      <hr class="featurette-divider">
+  
+     
+      
+  
+     
+  
+     
+  
+      
+  
+      <!-- /END THE FEATURETTES -->
+  
+    </div>
 
 
 
@@ -37,20 +53,17 @@
 
 document.getElementById("table_body").innerHTML += `
 
-            <tr>
-            <td>
-                <img src="${skincareProducts[i].image_url}" alt="" class="img-fluid">
-            </td>
-            <td>
-                <h1 class="card-title" class='display-3'>${skincareProducts[i].name}</h1>
-                <p class="card-text"><span class='fw-bold'>Brand:  </span> ${skincareProducts[i].brand}</p>
-                <p class="card-text"><span class='fw-bold'>Price:  </span> ${skincareProducts[i].price}</p>
-                <p class="card-text"><span class='fw-bold'>Category: </span>  ${skincareProducts[i].category}</p>
-                <p class="card-text"><span class='fw-bold'>Ingrediants: </span>  ${skincareProducts[i].ingredients}</p>
-                 <a href="${skincareProducts[i].url}" class="btn btn-info btn-sm" style='width:200px'>Buy Now</a>
-                
-            </td>
-        </tr>
+            <div class="row featurette">
+        <div class="col-md-7 d-flex align-items-center justify-content-center flex-column text-center">
+          <h2 class="featurette-heading fw-normal lh-1">${skincareProducts[i].name} <span class="text-body-secondary text-bold">${skincareProducts[i].brand}</span></h2>
+          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        </div>
+        <div class="col-md-5">
+          <img src='${skincareProducts[i].image_url}' class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" >
+         
+        </div>
+      </div>
+      <hr class="featurette-divider">
 
         `
       }
